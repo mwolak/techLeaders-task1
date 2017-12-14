@@ -1,185 +1,207 @@
 <!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html"
+      xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <title>task1</title>
-    <link rel="stylesheet" href="style.css"/>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <!-- css in assets -->
+    <link rel="stylesheet" href="assets/style.css"/>
+    <!-- latin-ext dla fontów -->
+    <!-- Ctrl + ? tworzy komentarz -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&subset=latin-ext" rel="stylesheet">
 </head>
 <body>
 
+<!--1. Czyścisz kod (usuwasz zbędne elementy)-->
+<!--2. klasy zamiast ID (modułowość i reużywalnośc kodu - DRY, KISS)-->
+<!--3. nazwy klas znaczące-->
+<!--4. nagłówki tam gdzie mają sens-->
+<!--5. wszędzie normalne pismo bez UPPERCASE (text-transform w css)-->
+<!--6. encje w html-->
+<!--7. pull request w repo-->
+<!--8. sprite images-->
 
-<div id="page">
+<header class="masterHeader">
 
+    <a href="/" class="logotype">
+        <img class="logoPicture" src="assets/images/logo.png"/>
+        <span class="logoTekstHeader">Lipsum</span>
+    </a>
 
-    <header>
-        <div class="headline">
+    <!--<div class="logo">-->
+    <!--<img src="assets/images/logo.png" alt="Logo"/>-->
+    <!--zdjecie było eekmentem blokowym i do klikniecia-->
+    <!--</div>-->
 
-            <div class="logo">
-                <img src="assets/images/logo.png" alt="Logo"/>
-            </div>
-            <div class="logotype">Lipsum</div>
-
-
-            <div class="title-left">
-                <h2 id="yellow">LOREM IPSUM COLOR SIT AMET </h2>
-                <h3>consectetur adipisicind elit, sed do eiusmud, tempor incididunt</h3>
-            </div>
-        </div>
-        <nav id="headlineNav">
-            <a href="" name="link"><h4>HOME </h4></a>
-            <a href="" name="link"><h4>PRODUCTS</h4></a>
-            <a href="" name="link"><h4>NEWS</h4></a>
-            <a href="" name="link"><h4>ABOUT US</h4></a>
-            <a href="" name="link"><h4>CONTACT US</h4></a>
-        </nav>
-    </header>
-    <main>
-        <div id="picturesPlace">
-            <h5>FEATURES PRODUCTS</h5>
-            <div class="picture">
-                <div id="pictureFrame">
-                    <div id="picture1">
-                        <img src="assets/images/img1.jpg" alt="img1" id="img1"/>
-                        <figcaption id="figcaption1"> Lipsum comoondo Manager</figcaption>
-                    </div>
-                </div>
-
-            </div>
-            <div>
-                <div id="picture2">
-                    <div id="relative">
-                        <img src="assets/images/img2.jpg" alt="img2" id="img2"/>
-                        <h2 id="white"><span>PREVIEW REALESE AVAILABLE</span></br><span>LIPSUM DATA</span><br><span>COMOODO</span></span>
-                        </h2>
-
-                        <figcaption id="figcaption2"> The mission of Orlin Reaserch, Inc. is to produced software
-                            products
-                            that multiply the
-                            power and efficiency of empirical scientific research in the social sciences
-                        </figcaption>
-
-                    </div>
+<h1 class="title">
+    <!--<h1 class="title">-->
+    <span class="mainTitle">lorem ipsum color sit amet</span>
+        <span class="subTitle">consectetur adipisicind elit, sed do eiusmud, tempor incididunt</span>
+    </h1>
 
 
+
+    <nav class="headlineNav">
+        <a href="" class="nav-link">Home</a>
+        <a href="" class="nav-link">Products</a>
+        <a href="" class="nav-link">News</a>
+        <a href="" class="nav-link">About us</a>
+        <a href="" class="nav-link">Contact us</a>
+    </nav>
+</header>
+<main>
+    <div id="picturesPlace">
+        <h5>FEATURES PRODUCTS</h5>
+        <div class="picture">
+            <div id="pictureFrame">
+                <div id="picture1">
+                    <img src="assets/images/img1.jpg" alt="img1" id="img1"/>
+                    <figcaption id="figcaption1"> Lipsum comoondo Manager</figcaption>
                 </div>
             </div>
 
         </div>
-        <div class="moreorientation">
-            <a class="moreContent" href="">More | > </a>
-        </div>
-
-
-        <div id="contentInformation">
-            <div class="content">
-                <div>
-                    <h4 class="smallHeaders">LATEST NEWS</h4>
-                </div>
-                <div class="dateNews">
-                    <div class="smallDate">
-                        <div>
-                            <span class="date">27</span>
-                            <br>
-                            <span class="month">NOV</span>
-                        </div>
-                    </div>
-                    <div class="access">
-
-                        <span class="accessTitle"> An early access preview</span>
-                        <br>
-                        <span class="availble">An early access preview of the Orylin Data Menager is now avaliable...</span>
-
-
-                    </div>
-                </div>
-                <div class="dateNews">
-                    <div class="smallDate">
-                        <div>
-                            <span class="date">27</span>
-                            <br>
-                            <span class="month">NOV</span>
-                        </div>
-                    </div>
-                    <div class="access">
-
-                        <span class="accessTitle"> An early access preview</span>
-                        <br>
-                        <span class="availble">An early access preview of the Orylin Data Menager is now avaliable...</span>
-
-
-                    </div>
-                </div>
-                <div class="dateNews">
-                    <div class="smallDate">
-                        <div>
-                            <span class="date">27</span>
-                            <br>
-                            <span class="month">NOV</span>
-                        </div>
-                    </div>
-                    <div class="access">
-
-                        <span class="accessTitle"> An early access preview</span>
-                        <br>
-                        <span class="availble">An early access preview of the Orylin Data Menager is now avaliable...</span>
-
-
-                    </div>
-                </div>
-            </div>
-            <div class="content">
-                <h4 class="smallHeaders"> WHO WE ARE?</h4>
-                <h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do aiusmud, tempor inciditrum ut
-                    labore et dolore magna aliqua.Ug enim a inim,veniam, quis dostrum exercitationullamco laorisnisi
-                    ut</h6>
-                <div class="moreorientation">
-                    <a class="moreContent" href="">More | > </a>
-                </div>
-            </div>
-            <div id="contact">
-                <h4 class="smallHeaders">CONTACT US</h4>
-                <div>
-
-                    <img src="assets/images/sprite_icons.png" alt="telefon" id="telefon">
-
-                    <h4 class="relative"> 66666</h4>
-                    <h4 class="relative">77777</h4>
-
-                </div>
-            </div>
-        </div>
-        <div id="clientsLogo">
-            <img id="at&t" src="assets/images/test_12.png" name=""/>
-            <img src="assets/images/test_15.png" id="Inc"/>
-            <img src="assets/images/test_06.png" id="tri"/>
-            <img src="assets/images/test_18.png" id="VISA"/>
-            <img src="assets/images/test_03.png" id="polar"/>
-            <img src="assets/images/test_09.png" id="GAP"/>
-        </div>
-    </main>
-    <footer>
         <div>
-            <img src="assets/images/logo_footer.png" alt="LogoFooter"/>
+            <div id="picture2">
+                <div id="relative">
+                    <div class="image-wrapper">
+                        <img src="assets/images/img2.jpg" alt="img2" id="img2"/>
+                        <span id="white" class="h2"><span>PREVIEW REALESE AVAILABLE</span></br>
+                            <span>LIPSUM DATA</span><br><span>COMOODO</span></span>
+                        </span>
+
+                    </div>
+
+                    <figcaption id="figcaption2"> The mission of Orlin Reaserch, Inc. is to produced software
+                        products
+                        that multiply the
+                        power and efficiency of empirical scientific research in the social sciences
+                    </figcaption>
+
+                </div>
 
 
-            <span class="logotypeFooter">Lipsum</span>
+            </div>
         </div>
 
-        <nav id="links">
-            <a href=""> <span class="footerLink">HOME |</span></a>
-            <a href=""><span class="footerLink"> ABOUT US |</span></a>
-            <a href=""><span class="footerLink">WORK |</span></a>
-            <a href=""><span class="footerLink"> SERVICES | </span></a>
-            <a href=""><span class="footerLink"> RESOURCES |</span></a>
-            <a href=""><span class="footerLink"> ARTICLES |</span></a>
-            <a href=""> <span class="footerLink"> CONTACT </span></a>
-        </nav>
-        <div id="orlin">
-            <h5> c2009 Orlin Research, Inc</h5>
-        </div>
-    </footer>
+    </div>
+    <div class="moreorientation">
+        <a class="moreContent" href="">More | > </a>
+    </div>
 
-</div>
+
+    <div id="contentInformation">
+        <div class="content">
+            <div>
+                <h4 class="smallHeaders">LATEST NEWS</h4>
+            </div>
+            <div class="dateNews">
+                <div class="smallDate">
+                    <div>
+                        <span class="date">27</span>
+                        <br>
+                        <span class="month">NOV</span>
+                    </div>
+                </div>
+                <div class="access">
+
+                    <span class="accessTitle"> An early access preview</span>
+                    <br>
+                    <span class="availble">An early access preview of the Orylin Data Menager is now avaliable...</span>
+
+
+                </div>
+            </div>
+            <div class="dateNews">
+                <div class="smallDate">
+                    <div>
+                        <span class="date">27</span>
+                        <br>
+                        <span class="month">NOV</span>
+                    </div>
+                </div>
+                <div class="access">
+
+                    <span class="accessTitle"> An early access preview</span>
+                    <br>
+                    <span class="availble">An early access preview of the Orylin Data Menager is now avaliable...</span>
+
+
+                </div>
+            </div>
+            <div class="dateNews">
+                <div class="smallDate">
+                    <div>
+                        <span class="date">27</span>
+                        <br>
+                        <span class="month">NOV</span>
+                    </div>
+                </div>
+                <div class="access">
+
+                    <span class="accessTitle"> An early access preview</span>
+                    <br>
+                    <span class="availble">An early access preview of the Orylin Data Menager is now avaliable...</span>
+
+
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <h4 class="smallHeaders"> WHO WE ARE?</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do aiusmud, tempor inciditrum ut
+                labore et dolore magna aliqua.Ug enim a inim,veniam, quis dostrum exercitationullamco laorisnisi
+                ut</p>
+            <div class="moreorientation">
+                <a class="moreContent" href="">More | > </a>
+            </div>
+        </div>
+        <div id="contact">
+            <h4 class="smallHeaders">CONTACT US</h4>
+            <div>
+
+                <img src="assets/images/sprite_icons.png" alt="telefon" id="telefon">
+
+                <h4 class="relative"> 66666</h4>
+                <h4 class="relative">77777</h4>
+
+            </div>
+        </div>
+    </div>
+    <div id="clientsLogo">
+        <img id="at&t" src="assets/images/test_12.png" name=""/>
+        <img src="assets/images/test_15.png" id="Inc"/>
+        <img src="assets/images/test_06.png" id="tri"/>
+        <img src="assets/images/test_18.png" id="VISA"/>
+        <img src="assets/images/test_03.png" id="polar"/>
+        <img src="assets/images/test_09.png" id="GAP"/>
+    </div>
+</main>
+<footer class="masterFooter">
+    <!--zażółcić gęślą jaźń-->
+    <div>
+        <img class="logoPicture" src="assets/images/logo_footer.png" alt="LogoFooter"/>
+
+
+        <span class="logotypeFooter">Lipsum</span>
+    </div>
+
+
+    <span class="icon"></span> +48 000000000 <br>
+    <span class="icon email"></span> bla@bla.com <br>
+    <span class="icon print"></span> Drukuj mnie<br>
+
+    <nav class="headlineNav">
+        <a href="" class="nav-link">Home</a>
+        <a href="" class="nav-link">Products</a>
+        <a href="" class="nav-link">News</a>
+        <a href="" class="nav-link">About us</a>
+        <a href="" class="nav-link">Contact us</a>
+    </nav>
+    <div id="orlin">
+        <h5> c2009 Orlin Research, Inc</h5>
+    </div>
+</footer>
+
 </body>
 </html>
