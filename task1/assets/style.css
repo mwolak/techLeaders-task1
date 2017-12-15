@@ -80,64 +80,6 @@ body {
     display: block;
 }
 
-
-
-
-/*koniec headera*/
-
-#topBorder {
-    background-color: rgb(242, 172, 4);
-    height: 8px;
-}
-
-h2 {
-
-    font-size: 18px;
-    margin-top: 8px;
-    margin-bottom: 0px;
-
-}
-
-h2#yellow {
-    color: #f2ac04;
-}
-
-h2#white {
-    color: white;
-    position: absolute;
-
-}
-
-h3 {
-    color: #3c3c3c;
-    font-size: 12px;
-    font-weight: lighter;
-    margin-top: 8px;
-}
-
-h4 {
-    color: #3c3c3c;
-    display: inline;
-    font-style: normal;
-    font-weight: lighter;
-    font-size: 18px;
-
-}
-
-h5 {
-    color: #3c3c3c;
-    font-size: 12px;
-    font-weight: normal;
-
-}
-
-h6 {
-    color: #3c3c3c;
-    font-size: 14px;
-    font-weight: normal;
-}
-
-
 .headlineNav {
     color: #535353;
     margin-top: 20px;
@@ -161,12 +103,6 @@ h6 {
 .masterHeader .headlineNav .nav-link {
     text-transform: uppercase;
 }
-
-.masterFooter .headlineNav .nav-link {
-    padding: 0;
-    margin: 0;
-}
-
 .masterHeader .headlineNav {
     border-top-color: #535353;
     border-bottom-color: #535353;
@@ -178,73 +114,183 @@ h6 {
 
 }
 
+/*koniec headera*/
+
+
+/*main*/
+
+.headline{
+    text-transform: uppercase;
+    display: block;
+}
+.picture{
+
+    float: left;
+    width: 50%;
+}
+.picture a{
+    text-decoration: none;
+}
+figcaption {
+    font-size: 14px;
+    margin: 14px;
+    color: #535353;
+
+}
+
+.picture1{
+    display: block;
+    padding: 1px;
+    border-style: double;
+    border-color: #535353;
+
+}
+.picture2{
+    display: block;
+    position: relative;
+
+}
+
+.picture1 figcaption{
+    text-align: center;
+}
+.img1{
+    width: 100%;
+}
+.img2{
+    width: 98%;
+    margin-left: 12px;
+    padding-bottom: 10px;
+    border-bottom-color: #535353;
+    border-bottom-width: thin;
+    border-bottom-style: solid;
+
+    display: block;
+
+}
+.pictureCaption{
+
+    text-transform: uppercase;
+    position: absolute;
+    color: white;
+    left: 25px;
+    top: 110px;
+    font-size: 18px;
+
+}
+.picture:after{
+    clear: both;
+}
+/*koniec zdjęć*/
+
+
+/*#topBorder {*/
+    /*background-color: rgb(242, 172, 4);*/
+    /*height: 8px;*/
+/*}*/
+
+/*h2 {*/
+
+    /*font-size: 18px;*/
+    /*margin-top: 8px;*/
+    /*margin-bottom: 0px;*/
+
+/*}*/
+
+/*h2#yellow {*/
+    /*color: #f2ac04;*/
+/*}*/
+
+/*h2#white {*/
+    /*color: white;*/
+    /*position: absolute;*/
+
+/*}*/
+
+/*h3 {*/
+    /*color: #3c3c3c;*/
+    /*font-size: 12px;*/
+    /*font-weight: lighter;*/
+    /*margin-top: 8px;*/
+/*}*/
+
+/*h4 {*/
+    /*color: #3c3c3c;*/
+    /*display: inline;*/
+    /*font-style: normal;*/
+    /*font-weight: lighter;*/
+    /*font-size: 18px;*/
+
+/*}*/
+
+/*h5 {*/
+    /*color: #3c3c3c;*/
+    /*font-size: 12px;*/
+    /*font-weight: normal;*/
+
+/*}*/
+
+/*h6 {*/
+    /*color: #3c3c3c;*/
+    /*font-size: 14px;*/
+    /*font-weight: normal;*/
+/*}*/
+
+
+/*footer*/
+
+.masterFooter .headlineNav .nav-link {
+    padding: 0;
+    margin: 0;
+}
+
+
+
 .masterFooter .headlineNav {
 
 }
 
 
-#picturesPlace {
 
-    display: inline;
-}
 
-#picturesPlace:after {
-    content: "";
-    display: block;
-    clear: both;
-}
+/*#picturesPlace:after {*/
+    /*content: "";*/
+    /*display: block;*/
+    /*clear: both;*/
+/*}*/
 
-figcaption {
-    font-size: 14px;
-    margin: 14px;
 
-}
 
-figcaption#figcaption1 {
-    text-align: center;
-}
+/*figcaption#figcaption1 {*/
+    /*text-align: center;*/
+/*}*/
 
-figcaption#figcaption2 {
-    border-top-width: 2px;
-    border-top-color: #535353;
-}
+/*figcaption#figcaption2 {*/
+    /*border-top-width: 2px;*/
+    /*border-top-color: #535353;*/
+/*}*/
 
-.picture {
 
-    float: left;
 
-}
+/*#picture1 {*/
 
-#picture1 {
+    /*border-style: solid;*/
+    /*border-width: thin;*/
+    /*border-color: rgb(212, 212, 212);*/
+/*}*/
 
-    border-style: solid;
-    border-width: thin;
-    border-color: rgb(212, 212, 212);
-}
 
-#pictureFrame {
-    border-style: solid;
-    border-width: thin;
-    border-color: rgb(175, 175, 175);
-    padding: 1px;
-    width: 480px;
-    margin-right: 30px;
 
-}
 
-#img1 {
-    width: 480px;
-}
-
-#img2 {
-    width: 480px;
-    padding-bottom: 8px;
-    border-bottom-color: #535353;
-    border-bottom-width: 1px;
-    border-bottom-style: solid;
-    margin-bottom: 4px;
-    position: relative;
-}
+/*#img2 {*/
+    /*width: 480px;*/
+    /*padding-bottom: 8px;*/
+    /*border-bottom-color: #535353;*/
+    /*border-bottom-width: 1px;*/
+    /*border-bottom-style: solid;*/
+    /*margin-bottom: 4px;*/
+    /*position: relative;*/
+/*}*/
 
 .content {
     float: left;
