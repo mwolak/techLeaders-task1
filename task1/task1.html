@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <title>task1</title>
-    <!-- css in assets -->
+    <!-- TODO: css in assets/styles -->
+    <!-- TODO: js in assets/scripts -->
     <link rel="stylesheet" href="assets/style.css"/>
     <!-- latin-ext dla fontów -->
     <!-- Ctrl + ? tworzy komentarz -->
@@ -23,6 +24,8 @@
 
 <header class="masterHeader">
 
+    <!-- TODO: to da się zamknąć w <a href="" class="logoType">Lipsum</a> --> 
+    <!-- TODO: spróbuj użyć pseudoklasy :before dla obrazka, w ten sposób możesz pozbyć się img oraz spana  --> 
     <a href="/" class="logotype">
         <img class="logoPicture" src="assets/images/logo.png"/>
         <span class="logoTekstHeader">Lipsum</span>
@@ -52,6 +55,7 @@
 
     <span class="headline"> Featured products</span>
 
+    <!-- TODO: zamiast div mozesz uzyc figure i figcaption https://www.w3schools.com/tags/tag_figcaption.asp, link raczej na zewnątrz figure -->
     <div class="picture">
         <a href="/" class="picture1" name="picture1">
             <img src="assets/images/img1.jpg" alt="img1" class="img1"/>
@@ -63,11 +67,13 @@
             <img src="assets/images/img2.jpg" alt="img2" class="img2">
             <div class="pictureCaption">
                 <span> Preview realise available </span>
+                <!-- TODO: <br> są be, display: block cacy --> 
                 <br>
                 <span>Lipsum data</span>
                 <br>
                 <span>comoodo</span>
             </div>
+            <!-- TODO: figcaption nie powinno istnieć bez figure --> 
             <figcaption>The mission of Orlin Reaserch, Inc. is to produced software
                 products that multiply the power and efficiency of empirical scientific research in the social sciences
             </figcaption>
